@@ -1,0 +1,10 @@
+gymnasium
+numpy
+nltk
+spacy
+transformers
+setuptools 
+wheel
+matplotlib
+stable-baselines3
+shimmy

@@ -1,0 +1,45 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {section}{\numberline {2}Background and Related Work}{5}{section.2}%
+\contentsline {section}{\numberline {3}Problem Formulation}{6}{section.3}%
+\contentsline {section}{\numberline {4}Dataset and Preprocessing}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Dataset Selection}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Tagset Simplification}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Lexical Dictionary Construction}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Morphological Feature Extraction}{8}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Embedding Representation}{9}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Train--Test Split}{9}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Reinforcement Learning Environments}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Environment 1: Standard POS Tagging}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Environment 2: Oracle-Augmented POS Tagging}{10}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Shared Properties and Design Rationale}{10}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Agent Architecture and Learning Algorithms}{11}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Agent Architecture}{11}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Value-Based Learning}{11}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Offline Reinforcement Learning Considerations}{11}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Reward Design and Constraints}{12}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Base Reward Signal}{12}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Lexical Constraints}{12}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Grammatical Transition Constraints}{12}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Oracle Cost in Extended Environments}{13}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Design Rationale}{13}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Experimental Setup}{13}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Training Protocol}{13}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Evaluation Procedure}{13}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Compared Configurations}{14}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Results and Analysis}{14}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Experiment 1.1: Learning Syntax via Active Environmental Interaction}{14}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Learning Stability and Convergence}{14}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Performance relative to Baselines}{15}{subsubsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.2}Experiment 1.2: Advanced Offline RL (CQL + BCQ)}{16}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}Learning Stability and Convergence}{16}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2}Performance Improvement}{16}{subsubsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.3}Experiment 2: Hybrid Correction Strategy}{19}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Overall Accuracy Comparison}{19}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Oracle Efficiency Analysis}{19}{subsubsection.9.3.2}%
+\contentsline {section}{\numberline {10}Error Analysis and Limitations}{20}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Sequential Processing Limitations}{20}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Ambiguity-Driven Errors}{22}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Credit Assignment Challenges}{22}{subsection.10.3}%
+\contentsline {section}{\numberline {11}Discussion}{22}{section.11}%
+\contentsline {section}{\numberline {12}Future Work}{23}{section.12}%
+\contentsline {section}{\numberline {13}Conclusions}{23}{section.13}%

@@ -1,0 +1,16 @@
+====================================================================================================
+DICT ACTION ANALYSIS SUMMARY
+====================================================================================================
+
+ Algorithm  DICT Uses  Necessary  Wasteful Necessity % Waste % Efficiency
+Q-Learning         52         13        39       25.0%   75.0%     ✗ Poor
+     SARSA         21          8        13       38.1%   61.9%     ⚠ Fair
+       DQN         31         17        14       54.8%   45.2%     ⚠ Fair
+ REINFORCE          0          0         0        0.0%    0.0%      → N/A
+
+====================================================================================================
+LEGEND:
+  • Necessity %: When DICT was used, how often was the base tagger wrong?
+  • Waste %: When DICT was used, how often was the base tagger already correct?
+  • Efficiency: ✓ Good (>70%), ⚠ Fair (30-70%), ✗ Poor (<30%), → N/A (never used)
+====================================================================================================

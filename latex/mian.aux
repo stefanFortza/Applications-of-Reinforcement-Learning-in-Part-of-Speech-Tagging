@@ -1,0 +1,79 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{4}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background and Related Work}{5}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Problem Formulation}{6}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Dataset and Preprocessing}{7}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Dataset Selection}{8}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Tagset Simplification}{8}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Lexical Dictionary Construction}{8}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Morphological Feature Extraction}{8}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Embedding Representation}{9}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Train--Test Split}{9}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Reinforcement Learning Environments}{9}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Environment 1: Standard POS Tagging}{9}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Environment 2: Oracle-Augmented POS Tagging}{10}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Shared Properties and Design Rationale}{10}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Agent Architecture and Learning Algorithms}{11}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Agent Architecture}{11}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Value-Based Learning}{11}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Offline Reinforcement Learning Considerations}{11}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Reward Design and Constraints}{12}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Base Reward Signal}{12}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Lexical Constraints}{12}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Grammatical Transition Constraints}{12}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Oracle Cost in Extended Environments}{13}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Design Rationale}{13}{subsection.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Experimental Setup}{13}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Training Protocol}{13}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Evaluation Procedure}{13}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Compared Configurations}{14}{subsection.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Results and Analysis}{14}{section.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Experiment 1.1: Learning Syntax via Active Environmental Interaction}{14}{subsection.9.1}\protected@file@percent }
+\newlabel{sec:exp1_1_results}{{9.1}{14}{Experiment 1.1: Learning Syntax via Active Environmental Interaction}{subsection.9.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.1.1}Learning Stability and Convergence}{14}{subsubsection.9.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Experiment 1.1: Evolution of average reward per episode during training.}}{14}{figure.1}\protected@file@percent }
+\newlabel{fig:exp1_reward}{{1}{14}{Experiment 1.1: Evolution of average reward per episode during training}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Experiment 1.1: Training loss over time showing volatility.}}{14}{figure.2}\protected@file@percent }
+\newlabel{fig:exp1_loss}{{2}{14}{Experiment 1.1: Training loss over time showing volatility}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.1.2}Performance relative to Baselines}{15}{subsubsection.9.1.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Experiment 1.1: Validation accuracy throughout the training process.}}{15}{figure.3}\protected@file@percent }
+\newlabel{fig:exp1_accuracy}{{3}{15}{Experiment 1.1: Validation accuracy throughout the training process}{figure.3}{}}
+\newlabel{fig:exp1_1_accuracy}{{3}{15}{Experiment 1.1: Validation accuracy throughout the training process}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Experiment 1.1: Confusion Matrix of the autonomous agent. Note the diagonal dominance but significant scattering for ambiguous classes like NOUN/VERB.}}{15}{figure.4}\protected@file@percent }
+\newlabel{fig:exp1_cm}{{4}{15}{Experiment 1.1: Confusion Matrix of the autonomous agent. Note the diagonal dominance but significant scattering for ambiguous classes like NOUN/VERB}{figure.4}{}}
+\newlabel{fig:exp1_1_cm}{{4}{15}{Experiment 1.1: Confusion Matrix of the autonomous agent. Note the diagonal dominance but significant scattering for ambiguous classes like NOUN/VERB}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Experiment 1.2: Advanced Offline RL (CQL + BCQ)}{16}{subsection.9.2}\protected@file@percent }
+\newlabel{sec:exp1_2_results}{{9.2}{16}{Experiment 1.2: Advanced Offline RL (CQL + BCQ)}{subsection.9.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.2.1}Learning Stability and Convergence}{16}{subsubsection.9.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.2.2}Performance Improvement}{16}{subsubsection.9.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Experiment 1.2: Training dynamics for the CQL + BCQ agent. Top: Episode rewards show consistent improvement. Middle: Validation accuracy climbs steadily. Bottom: Loss convergence is smoother than the standard DQN baseline.}}{17}{figure.5}\protected@file@percent }
+\newlabel{fig:exp1_2_training}{{5}{17}{Experiment 1.2: Training dynamics for the CQL + BCQ agent. Top: Episode rewards show consistent improvement. Middle: Validation accuracy climbs steadily. Bottom: Loss convergence is smoother than the standard DQN baseline}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Experiment 1.2: Recall per POS tag. The Offline RL agent achieves >90\% accuracy on most categories, with only function-specific ambiguities (e.g., PRT vs ADP) remaining.}}{18}{figure.6}\protected@file@percent }
+\newlabel{fig:exp1_2_per_tag}{{6}{18}{Experiment 1.2: Recall per POS tag. The Offline RL agent achieves >90\% accuracy on most categories, with only function-specific ambiguities (e.g., PRT vs ADP) remaining}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Experiment 1.2: Normalized Confusion Matrix. The diagonal structure is sharp, indicating that the agent has successfully internalized the syntactic rules of the language.}}{18}{figure.7}\protected@file@percent }
+\newlabel{fig:exp1_2_cm}{{7}{18}{Experiment 1.2: Normalized Confusion Matrix. The diagonal structure is sharp, indicating that the agent has successfully internalized the syntactic rules of the language}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}Experiment 2: Hybrid Correction Strategy}{19}{subsection.9.3}\protected@file@percent }
+\newlabel{sec:exp2_results}{{9.3}{19}{Experiment 2: Hybrid Correction Strategy}{subsection.9.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.1}Overall Accuracy Comparison}{19}{subsubsection.9.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces POS tagging accuracy comparison. The DQN agent achieves the highest performance, effectively correcting mistakes made by the base DistilBERT tagger.}}{19}{figure.8}\protected@file@percent }
+\newlabel{fig:accuracy_comparison}{{8}{19}{POS tagging accuracy comparison. The DQN agent achieves the highest performance, effectively correcting mistakes made by the base DistilBERT tagger}{figure.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparative accuracy of RL correction strategies against the supervised baseline on the evaluation set.}}{19}{table.1}\protected@file@percent }
+\newlabel{tab:exp2_accuracy}{{1}{19}{Comparative accuracy of RL correction strategies against the supervised baseline on the evaluation set}{table.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.2}Oracle Efficiency Analysis}{19}{subsubsection.9.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Necessity vs. Waste analysis for Oracle (DICT) usage. The DQN agent demonstrates superior efficiency, using the Oracle primarily when necessary ($54.8\%$ necessity), whereas Q-Learning frequently "wastes" budget on already correct tokens.}}{20}{figure.9}\protected@file@percent }
+\newlabel{fig:dict_efficiency}{{9}{20}{Necessity vs. Waste analysis for Oracle (DICT) usage. The DQN agent demonstrates superior efficiency, using the Oracle primarily when necessary ($54.8\%$ necessity), whereas Q-Learning frequently "wastes" budget on already correct tokens}{figure.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Detailed statistics on Oracle usage. The DQN agent learns a more calibrated uncertainty estimate, reducing wasteful calls by nearly half compared to tabular Q-Learning.}}{20}{table.2}\protected@file@percent }
+\newlabel{tab:oracle_stats}{{2}{20}{Detailed statistics on Oracle usage. The DQN agent learns a more calibrated uncertainty estimate, reducing wasteful calls by nearly half compared to tabular Q-Learning}{table.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Error Analysis and Limitations}{20}{section.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.1}Sequential Processing Limitations}{20}{subsection.10.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Frequency and efficiency of DICT (Oracle) action usage.}}{21}{figure.10}\protected@file@percent }
+\newlabel{fig:dict_usage}{{10}{21}{Frequency and efficiency of DICT (Oracle) action usage}{figure.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.2}Ambiguity-Driven Errors}{22}{subsection.10.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.3}Credit Assignment Challenges}{22}{subsection.10.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {11}Discussion}{22}{section.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {12}Future Work}{23}{section.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {13}Conclusions}{23}{section.13}\protected@file@percent }
+\gdef \@abspage@last{24}

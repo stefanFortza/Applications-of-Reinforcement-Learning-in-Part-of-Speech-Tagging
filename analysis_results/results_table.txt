@@ -1,0 +1,16 @@
+COMPREHENSIVE RESULTS - RL-based POS Tagging
+================================================================================
+
+Algorithm Accuracy Correct/Total KEEP (%) SHIFT (%) DICT (%)
+ Baseline    0.954     1245/1305    100.0       0.0      0.0
+      DQN    0.954     1245/1305    100.0       0.0      0.0
+
+IMPROVEMENT ANALYSIS
+--------------------------------------------------------------------------------
+DQN: +0.00% improvement over baseline
+
+
+DICT ACTION USAGE ANALYSIS
+--------------------------------------------------------------------------------
+
+DQN: DICT never used

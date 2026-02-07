@@ -1,0 +1,95 @@
+================================================================================
+INTERPRETAREA REZULTATELOR
+RL-based Part-of-Speech Tagging Correction
+================================================================================
+
+1. OVERALL PERFORMANCE ANALYSIS
+--------------------------------------------------------------------------------
+
+Baseline:
+  - Accuracy: 0.954
+
+Q-Learning:
+  - Accuracy: 0.961
+  - Improvement over baseline: +0.69%
+  - Action preferences:
+    * KEEP: 94.4%
+    * DICT: 4.0%
+    * SHIFT: 1.6%
+
+DQN:
+  - Accuracy: 0.966
+  - Improvement over baseline: +1.15%
+  - Action preferences:
+    * KEEP: 97.3%
+    * DICT: 2.4%
+    * SHIFT: 0.3%
+
+REINFORCE:
+  - Accuracy: 0.954
+  - Improvement over baseline: +0.00%
+  - Action preferences:
+    * KEEP: 100.0%
+
+
+2. KEY FINDINGS
+--------------------------------------------------------------------------------
+
+a) Best performing algorithm: DQN
+   Achieved 0.966 accuracy
+
+b) Action strategy analysis:
+
+   Q-Learning:
+   - Conservative strategy: trusts base model 94.4% of the time
+   - Moderate DICT usage (4.0%): strategic oracle consultation
+
+   DQN:
+   - Conservative strategy: trusts base model 97.3% of the time
+   - Moderate DICT usage (2.4%): strategic oracle consultation
+
+   REINFORCE:
+   - Conservative strategy: trusts base model 100.0% of the time
+   - Low DICT usage (0.0%): relies on learned patterns
+
+
+c) Tags most difficult to predict (lowest baseline accuracy):
+   - X: 0.000
+   - CONJ: 0.810
+   - PRT: 0.912
+     → Q-Learning improved to 0.941 (+2.9%)
+     → DQN improved to 0.941 (+2.9%)
+   - ADJ: 0.933
+     → Q-Learning improved to 0.947 (+1.3%)
+     → DQN improved to 0.947 (+1.3%)
+   - .: 0.943
+     → Q-Learning improved to 0.971 (+2.9%)
+     → DQN improved to 0.957 (+1.4%)
+
+
+3. PRACTICAL IMPLICATIONS
+--------------------------------------------------------------------------------
+
+a) When to use RL correction:
+   - RL correction provides measurable improvement over base model
+   - Most beneficial for error-critical applications
+
+b) Computational considerations:
+   - Baseline: Single forward pass (fastest)
+   - RL agents: Additional decision layer (slight overhead)
+   - DICT actions: Most expensive due to oracle consultation
+
+
+4. LIMITATIONS AND FUTURE WORK
+--------------------------------------------------------------------------------
+
+a) Current limitations:
+   - Small training set (100 sentences)
+   - Simulated DICT oracle (not realistic deployment scenario)
+   - Universal POS tagset (coarse-grained)
+
+b) Suggested improvements:
+   - Train on larger corpus for better generalization
+   - Replace DICT with realistic external resources
+   - Test on domain-specific data (medical, legal, etc.)
+   - Explore ensemble methods combining multiple RL agents
